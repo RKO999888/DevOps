@@ -11,10 +11,12 @@ all: run
 
 # Run the main program
 run:
+	@echo "Running code.py"
 	$(PYTHON) code.py
 
 # Run the tests
 test:
+	@echo "Running unit tests"
 	$(PYTHON) -m unittest discover -s tests
 
 # Clean up (if needed for future use, e.g., removing temporary files)
