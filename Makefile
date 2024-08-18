@@ -17,7 +17,7 @@ run:
 # Run the tests
 test:
 	@echo "Running unit tests"
-	$(PYTHON) -m unittest discover -s tests
+	$(PYTHON) -m unittest discover -s . -p "unit_test.py"
 
 # Clean up (if needed for future use, e.g., removing temporary files)
 clean:
